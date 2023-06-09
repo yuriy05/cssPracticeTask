@@ -7,8 +7,8 @@
     --size-s: 14px;
     --size-d: 16px;
     --size-l: 20px;
-    
-    --color-border:#DEE2E6;
+
+    --color-border: #DEE2E6;
     --color-primary: rgb(71, 71, 246);
     --color-white: #fff;
     --color-title: #5a5a5a;
@@ -95,18 +95,7 @@ body {
     transition: 0.3s;
 }
 
-/* .nav_vertical > .nav_link {
-    display: block;
-    
-  }
-
-
-  .header_nav_right {
-    margin-left: auto;
-    width: fit-content;
-  } */
-
-
+/* ?? =========================================== */
 
 .footer {
     padding: var(--space-l) 0;
@@ -138,7 +127,7 @@ body {
     gap: var(--space-b);
 
     padding: var(--space-b);
-    border-top: 1px solid var(--color-border);
+  
 }
 
 .hero_image {
@@ -153,7 +142,7 @@ body {
     gap: var(--space-l);
 }
 
-.hero_title{
+.hero_title {
     font-size: 50px;
     color: var(--color-title);
     font-weight: var(--weight-title);
@@ -175,6 +164,7 @@ body {
 
     padding: var(--space-b);
     border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .card {
@@ -183,26 +173,27 @@ body {
     align-items: center;
     text-align: center;
     gap: var(--space-l);
+    
 }
 
-.card_image{
+.card_image {
     height: 140px;
     width: 140px;
     clip-path: circle();
 }
 
-.card_title{
+.card_title {
     font-size: 32px;
     font-weight: var(--weight-title);
 }
 
-.card_text{
+.card_text {
     font-weight: var(--weight-text);
     font-size: var(--size-d);
     color: var(--color-text);
 }
 
-.button{
+.button {
     display: inline-block;
     font-size: var(--size-d);
     padding: var(--space-m) var(--space-xm);
@@ -211,9 +202,9 @@ body {
     border-radius: var(--border-radius);
 }
 
-.card_button{
+.card_button {
     color: var(--color-white);
-    background-color: #6C757D;    
+    background-color: #6C757D;
 }
 
 /* ?? =========================================== */
@@ -234,18 +225,18 @@ body {
 }
 
 .form_title {
-   font-size: 27px;
-   font-weight: var(--weight-title);
-   color: var(--color-title);
+    font-size: 27px;
+    font-weight: var(--weight-title);
+    color: var(--color-white);
 }
 
-.form_info{
+.form_info {
     font-size: var(--size-d);
     font-weight: var(--weight-text);
     color: var(--color-white);
 }
 
-.form_button{
+.form_button {
     background-color: var(--color-white);
     width: 100%;
     max-width: 160px;
