@@ -1,0 +1,238 @@
+:root {
+    --space-m: 12px;
+    --space-xm: 16px;
+    --space-l: 24px;
+    --space-b: 36px;
+    --space-e: 80px;
+
+    --size-s: 14px;
+    --size-d: 16px;
+    --size-l: 20px;
+    --size-e: 36px;
+    --size-b: 31px;
+    --size-form-title: 24px;
+
+    --color-border: #DEE2E6;
+    --color-primary: rgb(71, 71, 246);
+    --color-white: #fff;
+    --color-main: #5a5a5a;
+    --color-card: #212529;
+
+    --border-radius: 12px;
+
+    --weight-title: 500;
+    --weight-text: 400;
+
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ?? =========================================== */
+
+/*! Фон */
+.page {
+    background: var(--color-white);
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: center;
+}
+
+/*! Задаємо максимальну ширину для контенту */
+.page_content {
+    max-width: 960px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/* ?? =========================================== */
+
+.header {
+    padding: var(--space-l) 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.logo {
+    font-size: 17px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    width: 24px;
+    height: 24px;
+    border-radius: calc(var(--border-radius) /2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav {
+    display: flex;
+}
+
+.nav_inline {
+    gap: var(--space-l)
+}
+
+.nav_vertical {
+    gap: var(--space-xm);
+    flex-direction: column;
+}
+
+.nav_link {
+    color: var(--color-text);
+    font-size: var(--size-d);
+    text-decoration: none;
+    line-height: 100%;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+    transition: 0.3s;
+}
+
+/* ?? =========================================== */
+
+.footer {
+    padding: var(--space-l) 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--color-border);
+}
+
+.footer_copyright {
+    font-size: var(--size-s);
+    color: var(--color-text);
+    display: block;
+    margin: var(--space-l) 0 0 0;
+}
+
+.footer_title {
+    font-size: var(--size-l);
+    color: var(--color-title);
+    display: block;
+    margin-bottom: var(--space-l);
+    font-weight: var(--weight-title);
+}
+
+/* ?? =========================================== */
+
+.main {
+    display: flex;
+    align-items: center;
+    gap: var(--space-e);
+}
+
+.main_image {
+    width: 500px;
+    height: 500px;
+    border-radius: var(--border-radius);
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+}
+
+.main_title {
+    font-size: var(--size-e);
+    font-weight: var(--weight-title);
+    line-height: 120%;
+    color: var(--color-main);
+}
+
+.main_description {
+    font-size: var(--size-d);
+    font-weight: var(--weight-text);
+    line-height: 170%;
+    color: var(--color-main);
+}
+
+.main_button {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    color: var(--color-white);
+    font-size: var(--size-d);
+    background: #6C757D;
+    padding: 12px 16px;
+    width: 120px;
+}
+
+/* ?? =========================================== */
+
+.card {
+    display: flex;
+    gap: 52px;
+    padding: var(--space-l);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.card_image {
+    border-radius: var(--border-radius);
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--space-l);
+
+}
+
+.card_title {
+    font-size: var(--size-b);
+    font-weight: var(--weight-title);
+    color: var(--color-card);
+}
+
+.card_text {
+    font-size: var(--size-d);
+    font-weight: var(--weight-text);
+    color: var(--color-card);
+    line-height: 170%;
+}
+
+/* ?? =========================================== */
+
+.form_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #563D7C;
+    border-radius: var(--border-radius);
+    padding: var(--size-l);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.form_content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--space-m);
+}
+
+.form_title {
+    font-size: var(--size-form-title);
+    color: var(--color-white);
+    font-weight: var(--weight-text);
+}
+
+.form_button {
+    background: var(--color-white);
+    color: var(--color-title);
+    padding: var(--space-xm);
+    border-radius: var(--border-radius);
+    width: 240px;
+    text-align: center;
+    text-decoration: none;
+}
