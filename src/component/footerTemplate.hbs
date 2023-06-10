@@ -1,0 +1,15 @@
+ <footer class="footer">
+                <div class="">
+                    {{> logo}}
+                    <span class="footer_copyright">Copyright 2023</span>
+                </div>
+                
+                
+
+                {{#each footer}}
+                <div class="">
+                    <span class="footer_title">{{title}}</span>
+                    {{>nav list=links isVertical=true}}
+                </div>
+                {{/each}}
+            </footer>
