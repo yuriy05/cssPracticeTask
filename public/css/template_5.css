@@ -1,0 +1,334 @@
+:root {
+    --space-s: 8px;
+    --space-m: 12px;
+    --space-xm: 16px;
+    --space-l: 24px;
+    --space-b: 36px;
+    --space-e: 80px;
+
+    --size-s: 14px;
+    --size-d: 16px;
+    --size-l: 20px;
+    --size-b: 24px;
+    --size-form-title: 24px;
+
+    --color-border: #DEE2E6;
+    --color-border-light: #E4EAF2;
+    --color-primary: rgb(71, 71, 246);
+    --color-white: #fff;
+    --color-main: #5a5a5a;
+    --color-title: #212529;
+    --color-text: #6C757D;
+
+    --border-radius: 12px;
+
+    --weight-title: 600;
+    --weight-text: 400;
+
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ?? =========================================== */
+
+/*! Фон */
+.page {
+    background: var(--color-white);
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: center;
+}
+
+/*! Задаємо максимальну ширину для контенту */
+.page_content {
+    max-width: 1000px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/* ?? =========================================== */
+
+.header {
+    padding: var(--space-l) 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.logo {
+    font-size: 17px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    width: 24px;
+    height: 24px;
+    border-radius: calc(var(--border-radius) /2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav {
+    display: flex;
+}
+
+.nav_inline {
+    gap: var(--space-l)
+}
+
+.nav_vertical {
+    gap: var(--space-xm);
+    flex-direction: column;
+}
+
+.nav_link {
+    color: var(--color-text);
+    font-size: var(--size-d);
+    text-decoration: none;
+    line-height: 100%;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+    transition: 0.3s;
+}
+
+/* ?? =========================================== */
+
+.footer {
+    padding: var(--space-l) 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--color-border);
+}
+
+.footer_copyright {
+    font-size: var(--size-s);
+    color: var(--color-text);
+    display: block;
+    margin: var(--space-l) 0 0 0;
+}
+
+.footer_title {
+    font-size: var(--size-l);
+    color: var(--color-title);
+    display: block;
+    margin-bottom: var(--space-l);
+    font-weight: var(--weight-title);
+}
+
+/* ?? =========================================== */
+
+.main {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* ?? =========================================== */
+
+.messages {
+    max-width: 620px;
+    width: 100%;
+
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
+
+    padding: var(--space-l);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+}
+
+.messages_title {
+    font-size: var(--size-b);
+    color: var(--color-title);
+    font-weight: var(--weight-text);
+
+    padding-bottom: var(--space-m);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.messages_link {
+    font-size: var(--size-s);
+    color: var(--color-primary);
+    align-self: flex-end;
+    text-decoration: none;
+
+    transition-duration: 0.7s;
+    transition-property: opacity, border-color;
+
+    border-bottom: 1px solid transparent;
+}
+
+.messages_link:hover {
+    opacity: 0.7;
+    border-color: var(--color-primary);
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m);
+
+    padding-bottom: var(--space-m);
+    border-bottom: 1px solid var(--color-border);
+
+    position: relative;
+
+    padding-right: var(--space-b);
+}
+
+.msg_name {
+    font-size: var(--size-d);
+    color: var(--color-title);
+    font-weight: var(--weight-title);
+}
+
+.msg_text {
+    font-size: var(--size-d);
+    color: var(--color-title);
+    font-weight: var(--weight-text);
+}
+
+.msg_day {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* ?? =========================================== */
+
+.form {
+    max-width: 340px;
+    width: 100%;
+
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
+
+    padding: var(--space-l);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+}
+
+.form_title {
+    text-align: center;
+    font-size: var(--size-b);
+    font-weight: var(--weight-text);
+    color: var(--color-title);
+}
+
+.form_info {
+    font-size: var(--size-d);
+    text-align: ceneter;
+    font-weight: var(--weight-text);
+    color: var(--color-text);
+}
+
+.form_button {
+    text-align: cenetr;
+    padding: 12px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: calc(var(--border-radius) / 3);
+
+    transition: opacity 0.7s;
+}
+
+.form_button:hover {
+    opacity: 0.7;
+}
+
+.form_button:active {
+    opacity: 0.3;
+}
+
+.form_input_list {
+    display: flex;
+    gap: var(--space-m);
+    flex-direction: column;
+}
+
+.form_input {
+    padding: var(--space-xm);
+    border: 1px solid #CED4DA;
+    border-radius: calc(var(--border-radius) / 3);
+}
+
+.form_input::placeholder{
+    color: var(--color-title);
+    font-size: var(--size-d);
+}
+
+.form_checkbox {
+    display: flex;
+    gap: var(--space-s);
+    align-items: center;
+}
+
+.form_checkbox > input {
+    display: none;
+}
+
+.form_checkbox > input ~ div {
+    border: 1px solid #767676;
+    border-radius: calc(var(--border-radius) / 3);
+    width: 13px;
+    height: 13px;
+}
+
+.form_checkbox > input:checked ~ div {
+   border-color: var(--color-primary);
+   background-color: var(--color-primary);
+}
+
+.form_checkbox > label {
+    color: var(--color-title);
+    font-size: var(--size-d);
+    cursor: pointer;
+}
+
+/* ?? =========================================== */
+
+.advantages {
+    display: flex;
+    gap: var(--space-l);
+}
+
+.advantages > div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--border-radius);
+    padding: var(--space-l);
+    gap: var(--space-s);
+}
+
+.advantages > div > strong {
+    color: var(--color-title);
+    font-weight: var(--weight-title);
+    font-size: 18px;
+}
+
+.advantages > div > p {
+    color: #767676;
+    font-size: var(--size-d);
+    line-height: 150%;  
+}
+
+.advantages >div:nth-of-type(2) {
+    flex-grow: 1;
+    width: 100%;
+}
