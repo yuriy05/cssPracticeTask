@@ -1,0 +1,112 @@
+{{>headerTemplate}}
+
+<main class="main">
+
+    {{#with info}}
+    <div class="main_content">
+        <h1 class="main_title">{{title}}</h1>
+        <p class="main_description">{{description}}</p>
+    </div>
+    {{/with}}
+
+    {{#with form}}
+    <form class="form">
+
+        <div class="form_input_list">
+            {{#each inputs}}
+            <input class="form_input" type="{{type}}" placeholder="{{placeholder}}" name="{{name}}" id="{{id}}">
+            {{/each}}
+        </div>
+
+        <div class="form_checkbox">
+            <input type="checkbox" name="name">
+            <div></div>
+            <label for="{{checkbox.name}}">{{checkbox.label}}</label>
+        </div>
+
+        <button class="form_button" type="submit">{{button}}</button>
+
+        <div></div>
+
+        <p class="form_info">{{info}}</p>
+    </form>
+    {{/with}}
+
+</main>
+
+{{#with updates}}
+<div class="updates_block">
+    <div class="title_block">
+        <h3 class="updates_title">{{title}}</h3>
+        <div></div>
+    </div>
+
+    <div class="updates_list">
+        <div class="updates_content">
+            <div class="updates_profile">
+                <div class="profile_block blue"></div>
+            </div>
+            <div class="updates_info">
+                <p class="nickname">{{list.[0].nickname}}</p>
+                <p class="description">{{list.[0].description}}</p>
+                <div></div>
+            </div>
+        </div>
+        <div class="updates_content">
+            <div class="updates_profile">
+                <div class="profile_block pink"></div>
+            </div>
+            <div class="updates_info">
+                <p class="nickname">{{list.[1].nickname}}</p>
+                <p class="description">{{list.[1].description}}</p>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="updates_content">
+            <div class="updates_profile">
+                <div class="profile_block purple"></div>
+            </div>
+            <div class="updates_info">
+                <p class="nickname">{{list.[2].nickname}}</p>
+                <p class="description">{{list.[2].description}}</p>
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+    {{#with show_all}}
+    <a href="{{url}}" class="updates_link">{{text}}</a>
+    {{/with}}
+
+</div>
+{{/with}}
+
+
+{{#with expirience}}
+
+<div>
+    <div class="badge_position">
+        <div class="card_badge">
+            {{badge}}
+        </div>
+    </div>
+
+    <div class="card">
+
+        <h3 class="card_title">{{title}}</h3>
+
+        <div class="card_list">
+            {{#each list}}
+            <div class="card_block">
+                <p class="card_name">{{name}}</p>
+                <p class="card_description">{{details}}</p>
+            </div>
+            {{/each}}
+        </div>
+
+    </div>
+</div>
+{{/with}}
+
+{{>footerTemplate}}
