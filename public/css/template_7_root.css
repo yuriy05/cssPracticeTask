@@ -1,0 +1,36 @@
+:root {
+
+    background-color: var(--background-page);
+
+    font-family: 'Roboto', 'sans-serif';
+
+    --background-page: #111827;
+    --background-hero: linear-gradient(1200deg, rgba(78,63,146,1) 0%, rgba(17,24,39,1) 47%);
+    --background-about: rgba(42, 49, 65, 0.44);
+
+    --color-white: #fff;
+    --color-text: #9CA3AF;
+    --color-button: #885FFB;
+
+    --size-s: 14px;
+    --size-d: 16px;
+    --size-b: 18px;
+    --size-l: 24px;
+    --size-ex: 32px;
+    --size-en: 36px;
+
+    --space-s: 6px;
+
+    --weight-title: 700;
+    --weight-text: 400;
+
+    --space-d: 20px;
+
+    --border-radius-s: 4px;
+    --border-radius-d: 10px;
+    --border-radius-b: 24px;
+
+    --border-color: #253041;
+
+    user-select: none;
+}
