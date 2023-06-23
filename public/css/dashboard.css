@@ -1,0 +1,112 @@
+@layer normalize, block, element, mod, adaptive;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+  
+}
+
+:root {
+    --page-width-big: 1260px;
+    --page-width-medium: 1100px;
+    --page-width-small: 700px;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: rgba(0, 0, 0, 0.70);
+    --color-primary: #0D6EFD;
+    --color-light: #CED4DA;
+    --color-succes: #00801B;
+    --color-warning: #F51B2A;
+
+    --color-backgroud: #EFEFF4;
+    --color-background-dark: #212529;
+
+    --color-blue-light: #008BE1;
+    --color-blue-dark: #0068BC;
+
+    --color-yellow-light: #FFF8E3;
+    --color-yellow-dark: #FFBF35;
+
+    --color-purple-light: #5B39AD;
+    --color-purple-dark: #402B9C;
+
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 20px;
+    --spacing-5: 24px;
+    --spacing-6: 28px;
+    --spacing-7: 32px;
+    --spacing-8: 36px;
+    --spacing-9: 40px;
+
+    --size-1: 14px;
+    --size-2: 16px;
+    --size-3: 20px;
+    --size-4: 24px;
+    --size-5: 32px;
+
+
+    --radius-1: 4px;
+
+    --opacity-1: 0.7;
+    --opacity-2: 0.5;
+    --transition-1: 0.7s;
+
+    --line-height: 1.5em;
+}
+
+/* !! Block =========================================== */
+
+    .page {
+        background-color: var(--color-backgroud);
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .main {
+        padding: var(--spacing-9) 0;
+        display: grid;
+        gap: var(--spacing-9);
+    }
+
+    .aside {
+        padding: var(--spacing-5);
+        background-color: var(--color-background-dark);
+        display: grid;
+        gap: var(--spacing-5);
+        align-content: flex-start;
+    }
+
+/* !! Element =========================================== */
+
+    .page__aside {
+        grid-row: 1 / 3;
+    }
+
+    .aside__logo {
+        color: var(--color-white);
+        font-size: var(--size-4);
+        padding-bottom: var(--spacing-4);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .aside__nav {
+        display: grid;
+        gap: var(--spacing-2);
+    }
+
+/* !! Mod =========================================== */
+
+    .page--dashboard {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        grid-template-rows: 76px 1fr;
+    }
+
+
+
+/* !! Adaptive =========================================== */
